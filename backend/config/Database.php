@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $db_name = "phpproject";
+    private $db_name = "acadplus";
     private $username = "root";
     private $password = "";
     public $conn;

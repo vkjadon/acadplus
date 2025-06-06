@@ -12,14 +12,6 @@ if (!$data) {
 $db = (new Database())->connect();
 $user = new User($db, $data);
 
-// $user->fullName = $data->fullname;
-// $user->gender = $data->gender;
-// $user->email = $data->email;
-// $user->password = $data->password;
-// $user->usertype = $data->usertype;
-// $user->rollnoempid = $data->rollnoempid;
-// $user->department = $data->department;
-
 if ($user->register()) {
     echo json_encode(["message" => "Signup successfully"]);
 } else {

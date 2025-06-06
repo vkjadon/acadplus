@@ -13,9 +13,6 @@ if (!$data) {
 $db = (new Database())->connect();
 $user = new User($db, $data);
 
-// $user->email = $data->email;
-// $user->password = $data->password;
-
 $result = $user->login();
 
 if ($result) {

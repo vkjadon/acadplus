@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2025 at 08:08 AM
+-- Generation Time: Jun 06, 2025 at 08:41 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `phpproject`
+-- Database: `acadplus`
 --
 
 -- --------------------------------------------------------
@@ -36,15 +36,6 @@ CREATE TABLE `userdetails` (
   `rollnoempid` varchar(20) NOT NULL,
   `department` enum('DME','DCE','DEE','DMCE') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `userdetails`
---
-
-INSERT INTO `userdetails` (`fullname`, `gender`, `email`, `password`, `usertype`, `rollnoempid`, `department`) VALUES
-('', 'male', 'keshav@gmail.com', '$2y$10$O2.9UPMxicqA0zQktJTXTOO6Z9QGFkb1GoByS5ZhyIJtc32ye6OhG', 'student', '2310996502', 'DEE'),
-('', 'male', 'naveen@gmail.com', '$2y$10$kU5/xyRkuI8w9Vk/zbzf2eHhGkpxBRphtgjbV8i4w2Au1cqgrEdta', 'student', '2410996501', 'DME'),
-('', 'male', 'ram@gmail.com', '$2y$10$q4rK8ytnldKIhknc13ZiNOI/wSeuatY263xyS7AKcTXrlqQO8XkE.', 'student', '2410996502', 'DMCE');
 
 --
 -- Indexes for dumped tables
