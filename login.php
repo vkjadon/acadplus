@@ -18,7 +18,7 @@ async function login(event) {
         password: form.password.value
     };
 
-    const res = await fetch('backend/auth/login.php', {
+    const res = await fetch('backend/auth/login', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
@@ -26,7 +26,7 @@ async function login(event) {
 
     const result = await res.json();
     alert(result.message);
-    if (result.message.includes("successfully")) window.location.href = "dashboard.php";
+    if (result.message.includes("successfully")) window.location.href = "dashboard";
 }
 </script>
 </body>

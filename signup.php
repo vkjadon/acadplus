@@ -30,7 +30,7 @@ async function signup(event) {
         department: form.department.value
     };
 
-    const res = await fetch('backend/auth/register.php', {
+    const res = await fetch('backend/auth/register', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
@@ -38,7 +38,7 @@ async function signup(event) {
 
     const result = await res.json();
     alert(result.message);
-    if (result.message.includes("successfully")) window.location.href = "login.php";
+    if (result.message.includes("successfully")) window.location.href = "login";
 }
 </script>
 </body>
